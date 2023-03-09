@@ -1,16 +1,32 @@
-
 {
-    "experience":
-        {
-            "title":"Utbildingar",
-            "estet":"Estetiska programmet inriktning musik på Peder Skrivares skola, Studentexamen 2012.",
-            "folkis":"Ingesunds Folkhögskola Inriktning Musik – ljudteknik",
-            "bth":"Digital Ljudproduktion och Ljuddesign. Blekinges tekniska högskola. (Kandidatexamen)",
+    "education": [
+      {
+      "title":"Utbildningar"
+      },
+      {
+        "school": "Estetiska programmet inriktning musik på Peder Skrivares skola, Studentexamen 2012."
+      },
+      {
+        "school": "Ingesunds Folkhögskola med inriktning Musik och Ljudteknik"      
+      },
+      {
+        "university": "Blekinges tekniska högskola Digital Ljudproduktion och Ljuddesign - Kandidatexamen"    
+      }
+           
+    ],
+    "workExperience": [
+      {
+        "title":"Arbetserfarenhet"
+        },
+      {
+        "employer1": "Demo Live - Heltidsanställning - Ljudtekniker och montering."
+      },
+      {
+        "employer2": "Kosmonaut Event AB - Heltidsanställning - teknikansvarig och montering"
 
-            "workTitle":"Arbetslivserfarenhet",
-            "demo":"Heltidsanställning på Demo Live",
-            "kosmo":"Heltidsanställning Kosmonaut Event AB",
-            "derome":"Heltidsanställning Derome Group"
-        }      
-    
-}
+      },
+      {
+        "employer3": "Derome Group - Heltidsanställning - Snickeri och montering"
+      }
+    ]
+  }
