@@ -19,7 +19,7 @@ const printResume = () => {
     fetch('/cv.json')
      .then(res=>res.json())
      .then (response=> {
- console.log(response)
+
         // edu
         education.innerText=response.education[0].title;
         edu1.innerText=response.education[1].school;
@@ -32,10 +32,48 @@ const printResume = () => {
         work3.innerText=response.workExperience[3].employer3;      
     })
 }
-//call function
+//call function to print resume
 printResume()
 
 
 
 
+// -------easter egg one------------
+
+
+    function easterEgg1() {
+      document.body.style.backgroundImage = 'url("ainsley.jpg")';
+    }
+  
+
+    //--------easter egg two--------
+
+    let keyHistory = [];
+
+    const handleKey = (evt) => {
+      keyHistory.push(evt.key);
+      console.log(keyHistory);
+      let keyString = keyHistory.join("");
+      if (keyString.includes("boi")) {   
+       
+        window.open(            
+            "https://www.youtube.com/embed/EtCulrPSb3k?autoplay=1"           
+        )
+        keyHistory = []; 
+
+        const modal = document.getElementById("easterPop");
+        modal.style.display = "block";
+        modal.style.visibility ="visible";
+      }
+      if (keyHistory.length > 3){
+        keyHistory=[];
+      }
+    };
+    
+    document.querySelector("body").addEventListener("keydown", handleKey);
+
+closeModal = () =>{
+    const modal = document.getElementById("easterPop");
+    modal.style.visibility ="hidden";
+}
 

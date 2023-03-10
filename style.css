@@ -276,10 +276,66 @@ border: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 
-
-
-
-
+.myModal {
+   position: fixed;
+   padding: 35px;
+   max-width: 55x;
+   border-radius: 1.5em;
+   top: 50%;
+   left: 50%;
+   color: #000000;
+   transform: translate(-50%, -50%);
+   background-color: rgb(255, 255, 255);
+   visibility: hidden;
+  
+   transition: opacity .5s, visibility 0s linear .5s;
+   z-index: 1;
+   -webkit-border-radius: 1.5em;
+   -moz-border-radius: 1.5em;
+   -ms-border-radius: 1.5em;
+   -o-border-radius: 1.5em;
+}
+.myModal:target {
+   visibility: visible;
+   opacity: 1;
+   transition-delay: 0s;
+   width: 60%;
+}
+.myModal .closeModal {
+   position: absolute;
+   right: 5px;
+   top: 5px;
+   padding: 5px;
+   color: #000;
+   transition: color .1s;
+   font-size: 2em;
+   line-height: 1.5;
+   font-weight: 700;
+   -webkit-transition: color .1s;
+   -moz-transition: color .1s;
+   -ms-transition: color .1s;
+   -o-transition: color .1s;
+}
+.myModal .closeModal:hover {
+   color: #f00;
+}
+.close-popup {
+   background-color: rgba(0,0,0,.7);
+   cursor: default;
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity .5s, visibility 0s linear .5s;
+}
+.myModal:target + .closeModal {
+   opacity: 1;
+   visibility: visible;
+   transition-delay: 0s;
+}
 
 
 
