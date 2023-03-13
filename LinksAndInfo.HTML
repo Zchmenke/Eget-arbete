@@ -26,59 +26,10 @@
 
      <!-- Buttons and contents of the pop-ups -->
 <div class ="col-links">
-        <div class ="portfolio">
-          <em><h2 style = "text-align: center;">Portfolio</h2></em>
-                   <!--  button one -->
-            <nav class ="links" style ="text-align: center;">
-                <a href ="https://github.com/Zchmenke/Labb-4-Database-EF" target = "_blank">Databas-projekt</a> 
-                
-                <a href="#popup" class="btn"></a>
-                  <div id="popup" class="popup">
-                    <a href="#" class="close">&times;</a>
-                    <h2>Databas-projekt</h2>
-                    <p>En enkel databas jag har byggt för att bättre förstå relations-baserade databaser</p>
-                  </div>
-                <a href="#" class="close-popup"></a>
-                <br><br>
-
-                  <!--  button two -->
-                 <a href ="https://github.com/Zchmenke/Labb-4-Collections"target = "_blank">Collections</a>
-                
-                <a href="#popup1" class="btn"></a>
-                <div id="popup1" class="popup">
-                  <a href="#" class="close">&times;</a>
-                  <h2>Collections</h2>
-                  <p>En uppgift som handlar om att iterera och använda properties i olika collections</p>
-                </div>
-              <a href="#" class="close-popup"></a>
-              <br><br>
-                
-                <!--  button three -->
-                <a href ="https://github.com/Zchmenke/Threading-test" target = "_blank">Threading</a>
-                
-                <a href="#popup2" class="btn"></a>
-                <div id="popup2" class="popup">
-                  <a href="#" class="close">&times;</a>
-                  <h2>Threading</h2>
-                  <p>En enkel Consol-app jag har byggt för att testa Threading</p>
-                </div>
-              <a href="#" class="close-popup"></a>
-              <br><br>
-                
-                <!--  button four -->
-                <a href ="https://github.com/5laes/Bank_Orange" target = "_blank">Bank application</a>            
-                
-                <a href="#popup3" class="btn"></a>
-                <div id="popup3" class="popup">
-                  <a href="#" class="close">&times;</a>
-                  <h2>Bank-Applikation</h2>
-                  <p>En Bank-applikation som jag och ett par klasskamrater har byggt</p>
-                </div>
-              <a href="#" class="close-popup"></a>
-              <br><br>            
-            </nav> 
-       </div>
-             
+      
+              <!-- Div to handle react stuff -->
+              <em><h2 style = "text-align: center;">Portfolio</h2></em>
+             <div class="portfolio"></div>
 
        <!-- Links -->
        <div class ="other-links">
@@ -97,5 +48,10 @@
      </div>
 </div>
 
+
+<!--  Imports react scripts. -->
+<script src="https://unpkg.com/react/umd/react.development.js"></script>
+ <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+ <script src="./repos.js"></script>
 </body>
 </html>
